@@ -1,6 +1,6 @@
 import comtypes.client
 
-in_file = 'C:/Users/wick7/Desktop/test/DOCX.docx'  # input("Enter input file name along with path: ")  # C:/Users/wick7/Desktop/test/DOCX.docx
+in_file = input("Enter input file name along with path: ")  # C:/Users/wick7/Desktop/test/DOCX.docx
 try:
     if int(input("Press 1 if you want to save file with same name and path? Else press any other number : ")) == 1:
         out_file = in_file.replace((in_file.rsplit('.', 1)[1]), "pdf")
